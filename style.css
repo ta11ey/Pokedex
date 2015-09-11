@@ -1,0 +1,55 @@
+body{
+	margin: 0 auto;
+	
+	
+}
+
+/*div{
+	border: 1px solid green;
+}*/
+
+.pokedeximg{
+	background: url("http://gran4u.xtgem.com/Pokedex.png");
+	background-position: absolute;
+	background-repeat: no-repeat;
+	height:700px;
+	margin-left: 80px;
+	padding-left: 35px;
+	padding-top: 170px;
+	
+}
+
+.pokeimg{
+	height: 100px;
+	width: 80px;
+	margin-left: 50px;
+	margin-top: 80px;
+	background: url("http://pokeapi.co/media/img/1383571573.78.png")
+}
+
+.searchBox{
+	position: absolute;
+	display: block;
+	
+}
+.infoBox{
+	display: block;
+	position:absolute;
+	margin-left: 440px;
+
+}
+table, td, tr{
+/*  border: 1px solid blue;
+*/  text-align: center;
+  width: 280px;
+  border-radius: 10px;
+  background: #40F92F
+}
+
+.title {
+  background: #D5F7C3;
+}
+
+.info{
+  backgound: white;
+}

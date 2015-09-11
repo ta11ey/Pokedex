@@ -1,0 +1,50 @@
+<html ng-app = 'basicsApp'>
+<head>
+	<title>Pokedex</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body ng-controller = 'mainCtrl'>
+	<div class="pokedeximg">
+		<div class="searchBox">
+			<input ng-model = "whoDatPokemon" placeholder = "enter a pokemon number"></input>
+			<button ng-click = "pokeMon(whoDatPokemon)">Catch the Pokemon</button>
+			<div class="pokeimg" background = "http://pokeapi.co/media/img/1383571573.78.png"></div>
+			
+		</div>
+
+		<div class="infoBox">
+			<table>
+				<caption>{{myPokemon.name}}&nbsp;</caption>
+				  <td class = "title" colspan ="2">TYPE</td>
+				  <tr>
+				    <td class = pokeType colspan ="2">{{myPokemon.type}}&nbsp;</td>
+				  <tr>
+				    <td class = "title">WEIGHT</td>
+				    <td class = "title">HEIGHT</td>
+				  </tr>
+				   <tr>
+				    <td class = "info">{{myPokemon.weight}}&nbsp;</td>
+				    <td class = "info">{{myPokemon.height}}</td> 
+				  </tr>
+				  <tr >
+				  	<td class="title" colspan = "2">BASIC MOVES</td>
+				  </tr>
+				  <tr>
+				  	<td class = "info">{{myPokemon.move1}}&nbsp;</td>
+				  	<td class = "info">{{myPokemon.move2}}&nbsp;</td>
+				  </tr>
+				  <tr>
+				  	<td class = "info">{{myPokemon.move3}}&nbsp;</td>
+				  	<td class = "info">{{myPokemon.move4}}&nbsp;</td>
+				  </tr>
+				  <tr ><td class="title" colspan = "2">DESCRIPTION</td></tr>
+			</table>
+
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+	<script src="app.js"></script>
+	<script src="controller.js"></script>
+	<script src="service.js"></script>
+	</body>
+</html>
